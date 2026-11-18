@@ -12,6 +12,7 @@
 
 <p>
   <b><a href="#start-here">Start here</a></b> ·
+  <a href="#works-with">Codex · Gemini · Antigravity</a> ·
   <a href="#what-it-does">What it does</a> ·
   <a href="#skills-and-agents">Skills and agents</a> ·
   <a href="#faq">FAQ</a> ·
@@ -32,8 +33,9 @@ Portuguese…). It works with the Roblox Studio MCP server, or without it by giv
 
 ## Start here
 
-You need [Claude Code](https://claude.com/claude-code) and [Roblox Studio](https://create.roblox.com).
-In a terminal:
+You need an AI coding agent ([Claude Code](https://claude.com/claude-code) gets everything; Codex, Gemini CLI
+and Antigravity get the skills, see [Works with](#works-with)) and [Roblox Studio](https://create.roblox.com).
+With Claude Code, in a terminal:
 
 ```
 claude plugin marketplace add trevanix/ultimate-roblox-creator
@@ -49,6 +51,46 @@ Or call it directly: `/ultimate-roblox-creator:ultimate-roblox-creator`.
 **Only for one folder** (keeps your other sessions untouched): run both commands inside that folder with
 `--scope local`. **Try without installing**: download the repo and run
 `claude --plugin-dir ./ultimate-roblox-creator`. **Remove**: `claude plugin uninstall ultimate-roblox-creator@trevanix`.
+
+## Works with
+
+The 13 skills use the open Agent Skills format (a folder with a `SKILL.md`), so
+they also work outside Claude Code. The one-command install and the 4 reviewer agents are Claude Code only;
+elsewhere the director does those reviews itself.
+
+| Tool | Skills | Agents | Install |
+|---|---|---|---|
+| **Claude Code** | ✅ 13 | ✅ 4 | `claude plugin install` (see [Start here](#start-here)) |
+| **OpenAI Codex** | ✅ 13 | — | copy to `~/.agents/skills/` |
+| **Gemini CLI** | ✅ 13 | — | copy to `~/.agents/skills/` |
+| **Google Antigravity** | ✅ 13 | — | copy to `~/.gemini/config/skills/` (or `.agents/skills/` in your project) |
+
+Copy the skills (Windows PowerShell):
+
+```powershell
+git clone https://github.com/trevanix/ultimate-roblox-creator
+New-Item -ItemType Directory -Force "$HOME\.agents\skills" | Out-Null
+Copy-Item -Recurse -Force ultimate-roblox-creator\ultimate-roblox-creator\skills\* "$HOME\.agents\skills\"
+```
+
+macOS / Linux:
+
+```bash
+git clone https://github.com/trevanix/ultimate-roblox-creator
+mkdir -p ~/.agents/skills && cp -R ultimate-roblox-creator/ultimate-roblox-creator/skills/* ~/.agents/skills/
+```
+
+For **one project only**, copy them to `.agents/skills/` inside that project instead (all three tools read
+it). For **Antigravity's global folder**, use `~/.gemini/config/skills/` instead of `~/.agents/skills/`.
+Then start a new session (in Gemini CLI or Antigravity CLI, `/skills reload`) and describe your game idea.
+Codex can also be told `$ultimate-roblox-creator`.
+
+Folders are from each tool's official docs (checked 2026-11-18): [Codex](https://learn.chatgpt.com/docs/build-skills),
+[Gemini CLI](https://geminicli.com/docs/cli/skills/), [Antigravity](https://antigravity.google/docs/skills).
+Only Claude Code has been tested end to end so far; reports from other tools are welcome.
+
+To connect Roblox Studio, set up the Roblox Studio MCP server in your tool. Without it, the skills give
+you code to paste.
 
 ## What it does
 
@@ -114,6 +156,10 @@ ideas.
 No. Publishing, prices and putting items on sale are always done by you. Claude never saves or publishes
 your place unless you ask for that specific action.
 
+### Does it work with Codex, Gemini CLI or Antigravity?
+Yes, the 13 skills do: copy them to `~/.agents/skills/` (see [Works with](#works-with)). The one-command
+install and the 4 reviewer agents are Claude Code only.
+
 ### Does it work without the Roblox Studio MCP?
 Yes. Without it, Claude gives you each script, tells you where it goes and what you should see when you
 test.
@@ -173,6 +219,26 @@ que reparte pizzas. No sé programar». También puedes llamarlo con `/ultimate-
 Solo para una carpeta (no toca tus otras conversaciones): los dos comandos dentro de esa carpeta, con
 `--scope local`. Para quitarlo: `claude plugin uninstall ultimate-roblox-creator@trevanix`.
 
+### Funciona con Codex, Gemini CLI y Antigravity
+Las 13 skills usan el formato abierto de skills (una carpeta con `SKILL.md`), así que también sirven fuera
+de Claude Code. La instalación con dos comandos y los 4 agentes revisores son solo de Claude Code; en las
+demás, la skill directora hace esas revisiones ella misma.
+
+- **Codex y Gemini CLI:** copia las skills a `~/.agents/skills/`.
+- **Antigravity:** a `~/.gemini/config/skills/` (global) o a `.agents/skills/` dentro de tu proyecto.
+- **Solo un proyecto (las tres):** a `.agents/skills/` dentro de ese proyecto.
+
+En Windows (PowerShell):
+
+```powershell
+git clone https://github.com/trevanix/ultimate-roblox-creator
+New-Item -ItemType Directory -Force "$HOME\.agents\skills" | Out-Null
+Copy-Item -Recurse -Force ultimate-roblox-creator\ultimate-roblox-creator\skills\* "$HOME\.agents\skills\"
+```
+
+Después abre una sesión nueva (en Gemini CLI o Antigravity CLI, `/skills reload`) y cuéntale tu idea.
+Por ahora solo está probado de principio a fin en Claude Code.
+
 ### Qué hace
 1. **La idea:** preguntas de 2 en 2 o de 3 en 3 hasta tener la ficha del juego. Nunca impone un género.
 2. **El diseño:** decisiones numeradas con una recomendación. Tú eliges.
@@ -188,6 +254,7 @@ que no se traban y nada de modelos gratis de la Caja de herramientas (pueden tra
 ### Preguntas frecuentes
 - **¿Publica mi juego o gasta mis Robux?** No. Publicar, poner precios y poner cosas a la venta lo haces tú.
 - **¿Funciona sin el MCP de Roblox Studio?** Sí: te da el código, te dice dónde va y qué deberías ver.
+- **¿Sirve en Codex, Gemini o Antigravity?** Sí, las 13 skills (sin los agentes): ver arriba.
 - **¿Solo hace simuladores?** No. Primero pregunta tu idea; los géneros son solo ideas y preguntas.
 
 Hecho por [Trevanix](https://github.com/trevanix). Contacto: [contact@trevanix.com](mailto:contact@trevanix.com).

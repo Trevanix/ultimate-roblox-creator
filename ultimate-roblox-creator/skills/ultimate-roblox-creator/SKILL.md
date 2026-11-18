@@ -85,7 +85,8 @@ lo que necesitan: qué revisar o probar, la edad del público, la skill `rc-*` q
 | Etapa 4, pasos 5 y 7 (batería y Play), y Etapa 5 | `probador-studio` | Ejecuta pruebas por el MCP sin editar; sin MCP, prepara el código para pegar |
 | Hace falta encontrar sonidos (`rc-sonido`, Paso 1) | `buscador-audio` | Busca con licencia válida y devuelve tabla para el registro; no baja ni sube |
 
-Si un agente no aparece, el plugin no está bien instalado: hazlo tú con la skill que toca. Lo que
+Si un agente no aparece (plugin mal instalado, o estás en Codex, Gemini CLI o Antigravity, que solo
+cargan las skills), hazlo tú con la skill que toca y, si puedes, con otro subagente de solo lectura. Lo que
 diga un agente lleva su etiqueta de resultado; repítela, no la subas (un «verificado leyendo» no es
 «ejecutado»).
 
