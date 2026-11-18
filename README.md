@@ -173,6 +173,11 @@ It is designed for that: text by age, no pressure to buy, odds shown before any 
 "should" and "near-miss" cases), `claude plugin validate`, and real runs of the director, three skills and
 three agents. Results are in [`ultimate-roblox-creator/pruebas/`](ultimate-roblox-creator/pruebas/).
 
+It was also used for a real game, with the Roblox Studio MCP, from the first idea to a working
+prototype: idea and game sheet (stage 1), six design decisions (stage 2), a one-hour prototype built and
+tested by Claude in a separate place, and the person's "keep it" against criteria written before playing.
+What that run taught us is already in the skills (v1.1).
+
 ## Development
 
 - Plugin files live in [`ultimate-roblox-creator/`](ultimate-roblox-creator/); the marketplace is
@@ -250,6 +255,11 @@ Por ahora solo está probado de principio a fin en Claude Code.
 Lleva las lecciones de un juego de Roblox real ya publicado: el servidor manda, guardado con bloqueo de
 sesión y migraciones, compras que nunca se entregan dos veces, ventas honestas con niños, mapas grandes
 que no se traban y nada de modelos gratis de la Caja de herramientas (pueden traer puertas traseras).
+
+Además se usó en un juego nuevo de verdad, con el MCP de Roblox Studio, desde la idea hasta un prototipo
+que funciona: ficha del juego, seis decisiones de diseño, un prototipo de una hora hecho y probado por
+Claude en un lugar aparte, y el «se queda» de la persona frente a criterios escritos antes de jugar. Lo
+aprendido ya está en las skills (versión 1.1).
 
 ### Preguntas frecuentes
 - **¿Publica mi juego o gasta mis Robux?** No. Publicar, poner precios y poner cosas a la venta lo haces tú.

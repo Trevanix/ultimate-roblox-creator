@@ -273,6 +273,10 @@ trasera. Los números de piezas no tienen un límite fijo: compáralos antes y d
 con los milisegundos del MicroProfiler en el aparato más flojo.
 
 ## Gotchas (síntoma → causa → arreglo)
+- **Con StreamingEnabled, el vehículo o la balsa del jugador no aparece en su pantalla** → el juego no usa
+  personaje (`CharacterAutoLoads = false`), así que Roblox no sabe qué zona enviarle → en el servidor,
+  `player.ReplicationFocus = vehiculo` (pieza principal) al crearlo, y `nil` al quitarlo (lección real, en
+  un prototipo de balsa).
 - **Casi nadie pasa un salto** → hueco puesto a ojo, cerca del 100 % del salto → 70 % del salto medido;
   comprobación 1.
 - **El nivel de repente es imposible** → alguien cambió `WalkSpeed`, `JumpHeight` o la gravedad → vuelve a

@@ -51,3 +51,9 @@ Pasaron de verdad creando un juego publicado. Léelo de un vistazo al empezar ca
 27. Objetos compartidos en un servidor de práctica: el primero se lo llevaba todo. En un tutorial, un servidor
     por jugador (servidor reservado) o objetos por jugador.
 28. Viajes entre lugares (TeleportService) **no funcionan en Studio**: solo se prueban publicado.
+29. Un juego sin personaje (el jugador mueve una balsa) con StreamingEnabled: la balsa no llegaba a la
+    pantalla del jugador. Hacía falta `player.ReplicationFocus = balsa`.
+30. Probando con teclas simuladas, «la balsa no se mueve» era que estaba encallada, no el control. Probar en
+    un sitio abierto y medir antes y después.
+31. En el prototipo, lo que costó al principio («entender cómo girar») fue justo lo que el primer nivel del
+    juego tenía que enseñar. Preguntarlo siempre al decidir.

@@ -8,7 +8,7 @@ description: >
   Etapa 4, paso de pruebas, y en la Etapa 5 (run tests, playtest, test battery, console output,
   screenshot). No para revisar código leyendo (revisor-seguridad-datos) ni para escribir arreglos (eso lo
   hace la directora).
-tools: Read, Grep, Glob, mcp__Roblox_Studio__list_roblox_studios, mcp__Roblox_Studio__get_studio_state, mcp__Roblox_Studio__search_game_tree, mcp__Roblox_Studio__inspect_instance, mcp__Roblox_Studio__script_read, mcp__Roblox_Studio__execute_luau, mcp__Roblox_Studio__start_stop_play, mcp__Roblox_Studio__get_console_output, mcp__Roblox_Studio__screen_capture
+tools: Read, Grep, Glob, mcp__Roblox_Studio__list_roblox_studios, mcp__Roblox_Studio__get_studio_state, mcp__Roblox_Studio__search_game_tree, mcp__Roblox_Studio__inspect_instance, mcp__Roblox_Studio__script_read, mcp__Roblox_Studio__execute_luau, mcp__Roblox_Studio__start_stop_play, mcp__Roblox_Studio__get_console_output, mcp__Roblox_Studio__screen_capture, mcp__Roblox_Studio__user_keyboard_input
 model: inherit
 ---
 
@@ -37,6 +37,9 @@ IDs de cuenta.
 4. **Play**: en Play no hagas `require` para mirar el estado (carga otra copia del módulo, no la del
    juego): léelo por atributos o por la consola. Arranca, espera unos segundos, lee la consola (errores y avisos), haz una captura si te
    piden algo visible, y para Play al terminar.
+   Para probar controles, simula teclas con `user_keyboard_input` y mide en el cliente (posición,
+   velocidad, giro) antes y después; hazlo en un sitio abierto, porque un objeto encallado parece un
+   fallo del control.
 5. Lo que el MCP no puede hacer, márcalo «no verificado»: teléfono o mando reales, 2+ clientes, compras
    reales, viajes entre lugares, datos reales.
 

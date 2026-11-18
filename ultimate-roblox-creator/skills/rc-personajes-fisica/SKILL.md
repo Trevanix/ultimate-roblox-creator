@@ -253,6 +253,11 @@ return #fails == 0 and "OK 0 fallos" or table.concat(fails, "\n")
 Si los grupos se crean por código, esta prueba se ejecuta en Play (en el servidor).
 
 ## Gotchas (síntoma → causa → arreglo)
+- **Sin personaje, el vehículo que mueve el jugador no le llega** (StreamingEnabled) → nada le dice a Roblox
+  qué zona enviar → `player.ReplicationFocus = vehiculo` en el servidor, junto a `SetNetworkOwner(player)`.
+- **«Las teclas no mueven nada» al probar con teclas simuladas** → el objeto estaba pegado a una pared o
+  encallado, no era el control → antes de culpar al control, ponlo en espacio abierto, quita su velocidad y
+  mide posición, velocidad y giro antes y después de pulsar.
 - **A la segunda vida algo deja de funcionar** → se guardó el personaje o el Humanoid viejo en una
   variable, o solo se preparó el primer personaje → todo en `CharacterAdded` con contador de generación.
 - **Efectos o premios dobles tras reaparecer** → una espera terminó cuando ya había otro personaje → tras

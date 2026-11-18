@@ -78,6 +78,9 @@ if not ready() then return false, "timeout" end
 
 ## Pruebas en Play
 - Con el MCP: `start_stop_play`, mirar la consola (`get_console_output`), capturas (`screen_capture`).
+- Controles: simula teclas con `user_keyboard_input` (pulsar, mantener, soltar, esperar) y mide con
+  `execute_luau` en el cliente (posición, velocidad, giro) antes y después. Prueba en un sitio abierto: un
+  objeto encallado parece un fallo del control. Las capturas en pleno juego pueden fallar: dilo.
 - Lo que no se puede probar en Studio, dilo: teléfono real, mando real, varios servidores, compras reales,
   viajes entre lugares (TeleportService solo funciona publicado).
 - Para probar con varios jugadores: en Studio, Prueba → Clientes y servidores (2 o más jugadores).

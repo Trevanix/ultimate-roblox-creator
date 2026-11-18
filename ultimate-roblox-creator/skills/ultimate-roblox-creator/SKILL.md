@@ -120,6 +120,10 @@ comprobación: si no se cumple, no pases a la siguiente.
   respuestas lo piden. Si dice «no sé», da 2 o 3 ejemplos cortos o una opción por defecto apuntada como
   «pendiente, se puede cambiar».
 - Rellena con ella `plantillas/ficha-del-juego.md`.
+- **Si se inspira en un juego que ya existe** (de Roblox, Steam o consola): léelo primero (página oficial,
+  comunidad) y cuéntaselo en pocas líneas; quedaos con la idea general, nunca con el nombre, los personajes
+  ni el arte; comprueba que el nombre nuevo no esté ya en Roblox; y si cambia la forma de jugar (p. ej. el
+  original es en grupo y el suyo es para uno solo), propón 2 o 3 maneras de mantener lo divertido.
 - Si duda o pide ideas, carga `rc-generos`: son preguntas e ideas,
   no plantillas. Busca siempre **«algo distinto»**: lo que hará que su juego no sea uno más. Ofrécelo como
   2 o 3 ideas para hablar; si no le gusta ninguna, vale.

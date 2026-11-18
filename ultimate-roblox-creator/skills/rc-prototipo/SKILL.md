@@ -43,8 +43,13 @@ construyen directamente.
    la pregunta sea de sonido. Pon el **medidor** (abajo).
 4. **Juega** 5–10 min la persona y, si puede, 1 o 2 personas más (en Studio: Prueba → Clientes y
    servidores / Test → Clients and Servers). No expliques nada antes: mira dónde se pierden.
+   Antes de dárselo, pruébalo tú: con el MCP de Studio, en Play, simula las teclas (`user_keyboard_input`)
+   y mide con `execute_luau` en el cliente la posición, la velocidad y el giro antes y después. Di qué no
+   pudiste probar (mando, teléfono, cómo se ve la cámara, si es divertido).
 5. **Decide con los criterios**: se queda, se cambia una cosa y se repite (otra hora como mucho), o se
-   tira. Apunta el resultado en el documento del juego (abajo), con lo aprendido.
+   tira. Apunta el resultado en el documento del juego (abajo), con lo aprendido. Pregunta también qué
+   costó **al principio**: eso es lo que el primer nivel del juego tiene que enseñar (lección real: «cuando
+   entendí cómo girar, pasé rápido» → el nivel 1 enseña a girar con pocas palabras).
 6. **El prototipo no se convierte en el juego.** Si se queda, se construye de nuevo en el lugar del juego,
    por fases, con las skills de cada sistema (`rc-servidor`, `rc-datos`…). Del prototipo se lleva lo
    aprendido y los números, no el código.
