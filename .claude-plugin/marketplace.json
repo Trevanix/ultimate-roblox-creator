@@ -1,0 +1,17 @@
+{
+  "name": "trevanix",
+  "owner": {
+    "name": "Trevanix",
+    "email": "contact@trevanix.com"
+  },
+  "metadata": {
+    "description": "Free, open-source Claude Code plugins by Trevanix."
+  },
+  "plugins": [
+    {
+      "name": "ultimate-roblox-creator",
+      "source": "./ultimate-roblox-creator",
+      "description": "Make a Roblox game of any genre, from idea to publish, even if you can't code: guided questions, small tested phases, phone/console UI, safe saving and honest monetization."
+    }
+  ]
+}

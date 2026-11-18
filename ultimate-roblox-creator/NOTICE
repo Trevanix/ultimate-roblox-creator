@@ -1,0 +1,39 @@
+Ultimate-Roblox-Creator-Skill
+Licencia: Apache-2.0
+
+Este plugin toma ideas de método y de formato de:
+
+  awesome-gamedev-agent-skills
+  https://github.com/gamedev-skills/awesome-gamedev-agent-skills
+  Licencia Apache-2.0. Autoría: sus colaboradores (gamedev-skills).
+
+Qué se tomó (todo escrito de nuevo con nuestras palabras, en español; no se copió texto ni código):
+- La idea de una skill directora que carga solo las skills pequeñas que hacen falta.
+- El formato de cada skill: descripción que termina en «No para…», sección Gotchas
+  (síntoma → causa → arreglo), fecha de «Última comprobación», cada flujo termina con una
+  comprobación, y etiquetas de resultado (ejecutado · verificado leyendo · preparado sin ejecutar ·
+  no verificado).
+- Las pruebas de activación con frases que deben y no deben activar cada skill.
+- Algunos números y avisos de diseño y de Roblox (se citarán en las skills que los usen).
+
+Qué cambiamos:
+- Escrito para personas que no programan, en español, y hablando en el idioma de cada persona.
+- Preguntas para entender la idea, ventas honestas, respaldos y «publica siempre la persona».
+- Solo ejemplos en Luau; ningún script que instalar.
+- Agentes revisores propios (el repositorio original no trae agentes).
+
+----------------------------------------------------------------------
+
+La skill rc-sonido describe (no incluye ni copia) estas herramientas y servicios de terceros.
+No se incluye su código, sus sonidos ni sus modelos; nada se instala sin permiso de la persona:
+
+  earshot — https://github.com/Leonxlnx/earshot
+  Licencia del código: MIT. Se describe qué hace y qué necesita (leído en su README, 2026-11-18).
+
+  Clipwing/skills (Real SFX y su paquete de 78 sonidos de interfaz) —
+  https://github.com/Clipwing/skills
+  Scripts: MIT; sonidos de interfaz: CC0 (según su README, 2026-11-18). Se describe; no se incluye.
+
+  Openverse — https://openverse.org · API: https://api.openverse.org/v1/
+  Se describen los filtros de licencia de su API pública. Cada sonido conserva la licencia de su
+  origen; rc-sonido pide apuntarla y comprobarla en la página de origen.

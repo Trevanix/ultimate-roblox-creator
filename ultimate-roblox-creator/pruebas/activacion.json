@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "fecha": "2026-11-18",
+  "reglas": {
+    "debe": "Acierto si TODAS las 'esperadas' salen en la respuesta del juez (puede salir alguna más).",
+    "casi-igual": "Acierto si NINGUNA de 'no_debe' sale en la respuesta.",
+    "combinada": "Acierto si TODAS las 'esperadas' salen en la respuesta.",
+    "ninguna": "Acierto si el juez no elige ninguna skill ni agente (de ninguna lista)."
+  },
+  "casos": [
+    {"id": "D01", "grupo": "debe", "idioma": "es", "frase": "Quiero hacer un juego de Roblox pero no sé programar, ¿me ayudas?", "esperadas": ["ultimate-roblox-creator"]},
+    {"id": "D02", "grupo": "debe", "idioma": "es", "frase": "Tengo una idea para un juego en Roblox de cocinar con amigos, ¿por dónde empiezo?", "esperadas": ["ultimate-roblox-creator"]},
+    {"id": "D03", "grupo": "debe", "idioma": "es", "frase": "Sigamos con mi juego de Roblox, ¿en qué fase íbamos?", "esperadas": ["ultimate-roblox-creator"]},
+    {"id": "D04", "grupo": "debe", "idioma": "en", "frase": "I want to make my first Roblox game, I'm a total beginner", "esperadas": ["ultimate-roblox-creator"]},
+    {"id": "D05", "grupo": "debe", "idioma": "pt", "frase": "Quero criar um jogo no Roblox com meu filho, nunca programei", "esperadas": ["ultimate-roblox-creator"]},
+    {"id": "D06", "grupo": "debe", "idioma": "es", "frase": "Ayúdame a diseñar un juego de Roblox desde cero hasta publicarlo", "esperadas": ["ultimate-roblox-creator"]},
+    {"id": "D07", "grupo": "debe", "idioma": "es", "frase": "Mi hija de 10 años quiere tener su propio juego de Roblox, ¿cómo lo hacemos?", "esperadas": ["ultimate-roblox-creator"]},
+    {"id": "D08", "grupo": "debe", "idioma": "en", "frase": "Help me plan a Roblox game step by step, from idea to launch", "esperadas": ["ultimate-roblox-creator"]},
+
+    {"id": "D09", "grupo": "debe", "idioma": "es", "frase": "Mis jugadores pierden las monedas cuando salen de mi juego de Roblox, ¿por qué?", "esperadas": ["rc-datos"]},
+    {"id": "D10", "grupo": "debe", "idioma": "en", "frase": "How do I add session locking with UpdateAsync so Roblox player data isn't overwritten across servers?", "esperadas": ["rc-datos"]},
+    {"id": "D11", "grupo": "debe", "idioma": "es", "frase": "Quiero poner una versión al guardado de mi juego de Roblox y migrar los datos viejos", "esperadas": ["rc-datos"]},
+    {"id": "D12", "grupo": "debe", "idioma": "pt", "frase": "O progresso dos jogadores não salva no meu jogo do Roblox", "esperadas": ["rc-datos"]},
+
+    {"id": "D13", "grupo": "debe", "idioma": "es", "frase": "Unos tramposos se dan dinero infinito en mi juego de Roblox disparando un RemoteEvent", "esperadas": ["rc-servidor"]},
+    {"id": "D14", "grupo": "debe", "idioma": "en", "frase": "Validate this RemoteEvent damage handler on the Roblox server: rate limit, NaN checks, distance", "esperadas": ["rc-servidor"]},
+    {"id": "D15", "grupo": "debe", "idioma": "es", "frase": "¿Cómo evito que un exploiter pida premios al servidor desde lejos en mi juego de Roblox?", "esperadas": ["rc-servidor"]},
+
+    {"id": "D16", "grupo": "debe", "idioma": "es", "frase": "Los botones de mi juego de Roblox se ven diminutos en el móvil y la muesca tapa el menú", "esperadas": ["rc-interfaz"]},
+    {"id": "D17", "grupo": "debe", "idioma": "en", "frase": "My Roblox shop menu can't be navigated with an Xbox controller", "esperadas": ["rc-interfaz"]},
+    {"id": "D18", "grupo": "debe", "idioma": "es", "frase": "Quiero un HUD de Roblox con la vida y las monedas que se vea bien en tableta y en PC", "esperadas": ["rc-interfaz"]},
+
+    {"id": "D19", "grupo": "debe", "idioma": "es", "frase": "Cuando mi personaje reaparece en Roblox, la animación de correr deja de funcionar", "esperadas": ["rc-personajes-fisica"]},
+    {"id": "D20", "grupo": "debe", "idioma": "en", "frase": "Players keep pushing each other around, I want collision groups in my Roblox game", "esperadas": ["rc-personajes-fisica"]},
+    {"id": "D21", "grupo": "debe", "idioma": "es", "frase": "Las balas rápidas atraviesan las paredes sin tocar nada en mi juego de Roblox", "esperadas": ["rc-personajes-fisica"]},
+
+    {"id": "D22", "grupo": "debe", "idioma": "es", "frase": "¿Cuánto debería costar cada mejora en mi simulador de Roblox para que no se acabe en un día?", "esperadas": ["rc-economia"]},
+    {"id": "D23", "grupo": "debe", "idioma": "en", "frase": "Design a rebirth system and offline earnings for my Roblox tycoon", "esperadas": ["rc-economia"]},
+    {"id": "D24", "grupo": "debe", "idioma": "es", "frase": "Quiero vender un pase VIP con Robux en mi juego sin engañar a los niños", "esperadas": ["rc-economia"]},
+    {"id": "D25", "grupo": "debe", "idioma": "pt", "frase": "As moedas do meu jogo de Roblox aparecem como 1000000, quero que mostre 1M", "esperadas": ["rc-economia"]},
+
+    {"id": "D26", "grupo": "debe", "idioma": "es", "frase": "Mi juego de Roblox va a tirones en teléfonos baratos, el mapa es enorme", "esperadas": ["rc-mundo"]},
+    {"id": "D27", "grupo": "debe", "idioma": "es", "frase": "¿A qué distancia pongo las plataformas de mi obby de Roblox para que no sean imposibles?", "esperadas": ["rc-mundo"]},
+    {"id": "D28", "grupo": "debe", "idioma": "en", "frase": "How should I lay out zones and keys in my Roblox map so nobody gets soft-locked?", "esperadas": ["rc-mundo"]},
+
+    {"id": "D29", "grupo": "debe", "idioma": "es", "frase": "Quiero que al golpear a un enemigo en mi juego de Roblox la cámara tiemble un poco y se sienta potente", "esperadas": ["rc-sensacion"]},
+    {"id": "D30", "grupo": "debe", "idioma": "en", "frase": "Add hitstop and screen shake to my Roblox sword combat, it feels floaty", "esperadas": ["rc-sensacion"]},
+    {"id": "D31", "grupo": "debe", "idioma": "es", "frase": "Recoger monedas en mi juego de Roblox se siente soso, ¿qué efectos visuales le pongo?", "esperadas": ["rc-sensacion"]},
+
+    {"id": "D32", "grupo": "debe", "idioma": "es", "frase": "Mi zombi de Roblox se queda atascado en las esquinas cuando persigue al jugador", "esperadas": ["rc-npc"]},
+    {"id": "D33", "grupo": "debe", "idioma": "en", "frase": "Build a behavior tree for a boss enemy in Roblox with pathfinding", "esperadas": ["rc-npc"]},
+    {"id": "D34", "grupo": "debe", "idioma": "es", "frase": "Quiero un tendero en mi juego de Roblox que hable con el jugador con varias respuestas", "esperadas": ["rc-npc"]},
+
+    {"id": "D35", "grupo": "debe", "idioma": "es", "frase": "No sé si hacer un tycoon o un tower defense en Roblox, dame ideas distintas de cada uno", "esperadas": ["rc-generos"]},
+    {"id": "D36", "grupo": "debe", "idioma": "en", "frase": "What makes a good Roblox horror game? Give me genre-specific numbers and questions", "esperadas": ["rc-generos"]},
+    {"id": "D37", "grupo": "debe", "idioma": "pt", "frase": "Quero ideias para um jogo de corrida no Roblox que seja diferente dos outros", "esperadas": ["rc-generos"]},
+
+    {"id": "D38", "grupo": "debe", "idioma": "es", "frase": "Antes de construir todo, quiero probar en una hora si mi mecánica de imanes engancha en Roblox", "esperadas": ["rc-prototipo"]},
+    {"id": "D39", "grupo": "debe", "idioma": "en", "frase": "Write a one-page game design document for my Roblox game with feature status", "esperadas": ["rc-prototipo"]},
+    {"id": "D40", "grupo": "debe", "idioma": "en", "frase": "Greybox prototype of a grappling hook mechanic in Roblox to see if it's fun", "esperadas": ["rc-prototipo"]},
+
+    {"id": "D41", "grupo": "debe", "idioma": "es", "frase": "¿De dónde saco música para mi juego de Roblox sin problemas de derechos de autor?", "esperadas": ["rc-sonido"]},
+    {"id": "D42", "grupo": "debe", "idioma": "en", "frase": "Can I use a famous pop song in my Roblox game? Otherwise I need CC0 sound effects", "esperadas": ["rc-sonido"]},
+    {"id": "D43", "grupo": "debe", "idioma": "es", "frase": "Quiero que la música de mi juego de Roblox cambie al entrar en la cueva y baje cuando sale un aviso", "esperadas": ["rc-sonido"]},
+
+    {"id": "D44", "grupo": "debe", "idioma": "es", "frase": "Ya terminé mi juego de Roblox, ¿cómo lo hago público?", "esperadas": ["rc-publicar"]},
+    {"id": "D45", "grupo": "debe", "idioma": "en", "frase": "How do I fill out the content maturity questionnaire and thumbnails for my Roblox experience?", "esperadas": ["rc-publicar"]},
+    {"id": "D46", "grupo": "debe", "idioma": "pt", "frase": "Quero publicar meu jogo no Roblox e ganhar Robux, o que preciso na conta?", "esperadas": ["rc-publicar"]},
+
+    {"id": "D47", "grupo": "debe", "idioma": "es", "frase": "Revisa solo leyendo si los remotos y el guardado de mi juego de Roblox tienen agujeros antes de publicar", "esperadas": ["revisor-seguridad-datos"]},
+    {"id": "D48", "grupo": "debe", "idioma": "es", "frase": "Revisa los textos y la tienda de mi juego de Roblox: es para niños de 8 años", "esperadas": ["revisor-textos-ventas"]},
+    {"id": "D49", "grupo": "debe", "idioma": "es", "frase": "Pasa la batería de pruebas de mi juego en Roblox Studio y dime qué sale en la consola", "esperadas": ["probador-studio"]},
+    {"id": "D50", "grupo": "debe", "idioma": "es", "frase": "Búscame efectos de sonido CC0 de una puerta que cruje para mi juego de Roblox", "esperadas": ["buscador-audio"]},
+
+    {"id": "N01", "grupo": "casi-igual", "idioma": "en", "frase": "How do I make a player controller in Unity with a CharacterController?", "esperadas": [], "no_debe": ["rc-personajes-fisica", "ultimate-roblox-creator"]},
+    {"id": "N02", "grupo": "casi-igual", "idioma": "es", "frase": "¿Cómo guardo la partida en Godot con ConfigFile?", "esperadas": [], "no_debe": ["rc-datos"]},
+    {"id": "N03", "grupo": "casi-igual", "idioma": "es", "frase": "Explícame la diferencia entre task.wait y wait en Luau", "esperadas": ["roblox-game"], "no_debe": ["rc-servidor", "ultimate-roblox-creator"]},
+    {"id": "N04", "grupo": "casi-igual", "idioma": "en", "frase": "How do I narrow an Instance? result under --!strict in Luau?", "esperadas": ["roblox-dev:luau-strict-typing"], "no_debe": ["rc-servidor", "ultimate-roblox-creator"]},
+    {"id": "N05", "grupo": "casi-igual", "idioma": "en", "frase": "Set up Rojo, Wally, Selene and StyLua for my Roblox project", "esperadas": ["roblox-dev:setup"], "no_debe": ["ultimate-roblox-creator"]},
+    {"id": "N06", "grupo": "casi-igual", "idioma": "es", "frase": "Mi juego de Unity va lento en Android, ¿cómo lo optimizo?", "esperadas": [], "no_debe": ["rc-mundo"]},
+    {"id": "N07", "grupo": "casi-igual", "idioma": "es", "frase": "Quiero un menú en HTML y CSS que se adapte al móvil para mi web", "esperadas": [], "no_debe": ["rc-interfaz"]},
+    {"id": "N08", "grupo": "casi-igual", "idioma": "en", "frase": "Write TestEZ unit tests for my Roblox inventory module", "esperadas": ["roblox-dev:roblox-testing"], "no_debe": ["probador-studio", "rc-prototipo"]},
+    {"id": "N09", "grupo": "casi-igual", "idioma": "es", "frase": "Compón una canción para el cumpleaños de mi madre", "esperadas": [], "no_debe": ["rc-sonido", "buscador-audio"]},
+    {"id": "N10", "grupo": "casi-igual", "idioma": "es", "frase": "¿Cómo publico mi app de Android en Google Play?", "esperadas": [], "no_debe": ["rc-publicar"]},
+    {"id": "N11", "grupo": "casi-igual", "idioma": "es", "frase": "Diseña la economía de un juego de cartas de mesa físico", "esperadas": [], "no_debe": ["rc-economia"]},
+    {"id": "N12", "grupo": "casi-igual", "idioma": "es", "frase": "Pathfinding A* en Python para un robot aspirador", "esperadas": [], "no_debe": ["rc-npc"]},
+    {"id": "N13", "grupo": "casi-igual", "idioma": "en", "frase": "Make a screen shake in Godot 4 with Camera2D", "esperadas": [], "no_debe": ["rc-sensacion"]},
+    {"id": "N14", "grupo": "casi-igual", "idioma": "es", "frase": "¿Cuál es el mejor juego de terror de Roblox para jugar con amigos esta noche?", "esperadas": [], "no_debe": ["rc-generos", "ultimate-roblox-creator"]},
+    {"id": "N15", "grupo": "casi-igual", "idioma": "es", "frase": "Haz una revisión general de rendimiento y fugas de memoria de mi código Luau", "esperadas": ["roblox-dev:roblox-reviewer"], "no_debe": ["revisor-seguridad-datos"]},
+    {"id": "N16", "grupo": "casi-igual", "idioma": "en", "frase": "How do I fix connection leaks in my RunService.Heartbeat loop?", "esperadas": ["roblox-dev:roblox-performance"], "no_debe": ["rc-mundo"]},
+    {"id": "N17", "grupo": "casi-igual", "idioma": "es", "frase": "Escribe un documento de diseño para mi novela de fantasía", "esperadas": [], "no_debe": ["rc-prototipo"]},
+    {"id": "N18", "grupo": "casi-igual", "idioma": "es", "frase": "¿Cuántos Robux tengo que comprar para la skin que quiero?", "esperadas": [], "no_debe": ["rc-economia", "rc-publicar"]},
+
+    {"id": "C01", "grupo": "combinada", "idioma": "es", "frase": "Empecemos mi juego de supervivencia en Roblox; lo primero, que el progreso se guarde bien", "esperadas": ["ultimate-roblox-creator", "rc-datos"]},
+    {"id": "C02", "grupo": "combinada", "idioma": "en", "frase": "Let's build my Roblox obby from scratch, with jump gaps that aren't impossible", "esperadas": ["ultimate-roblox-creator", "rc-mundo"]},
+    {"id": "C03", "grupo": "combinada", "idioma": "es", "frase": "Quiero hacer un juego de terror en Roblox desde cero, con música que dé miedo", "esperadas": ["ultimate-roblox-creator", "rc-sonido"]},
+    {"id": "C04", "grupo": "combinada", "idioma": "es", "frase": "Ayúdame a crear mi primer juego de Roblox con una tienda de Robux honesta", "esperadas": ["ultimate-roblox-creator", "rc-economia"]},
+    {"id": "C05", "grupo": "combinada", "idioma": "es", "frase": "Vamos a hacer un juego de peleas en Roblox; quiero que los golpes se sientan fuertes y que nadie haga trampas", "esperadas": ["ultimate-roblox-creator", "rc-sensacion", "rc-servidor"]},
+    {"id": "C06", "grupo": "combinada", "idioma": "pt", "frase": "Quero fazer um jogo de Roblox do zero com inimigos que perseguem o jogador", "esperadas": ["ultimate-roblox-creator", "rc-npc"]},
+    {"id": "C07", "grupo": "combinada", "idioma": "en", "frase": "New Roblox game idea: a pet simulator but different. Help me pick the genre twist and prototype it quickly", "esperadas": ["ultimate-roblox-creator", "rc-generos", "rc-prototipo"]},
+    {"id": "C08", "grupo": "combinada", "idioma": "es", "frase": "Sigamos con mi juego de Roblox: ya está listo y toca publicarlo", "esperadas": ["ultimate-roblox-creator", "rc-publicar"]},
+
+    {"id": "X01", "grupo": "ninguna", "idioma": "es", "frase": "¿Qué tiempo hace hoy en Madrid?", "esperadas": []},
+    {"id": "X02", "grupo": "ninguna", "idioma": "es", "frase": "Resume este PDF de facturas", "esperadas": []},
+    {"id": "X03", "grupo": "ninguna", "idioma": "en", "frase": "Write a Python script to rename files by date", "esperadas": []},
+    {"id": "X04", "grupo": "ninguna", "idioma": "es", "frase": "¿Cómo hago una tortilla de patatas?", "esperadas": []},
+    {"id": "X05", "grupo": "ninguna", "idioma": "en", "frase": "Explain the difference between TCP and UDP", "esperadas": []},
+    {"id": "X06", "grupo": "ninguna", "idioma": "pt", "frase": "Me ajuda a escrever um e-mail para meu chefe", "esperadas": []}
+  ]
+}

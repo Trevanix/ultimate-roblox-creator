@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 350" width="880" height="350" role="img"
+     aria-label="Ultimate-Roblox-Creator: you tell Claude your game idea, it asks a few simple questions, plans small tested phases, builds for computer, phone and console, and you publish your Roblox game yourself.">
+  <title>Ultimate-Roblox-Creator: from your idea to your published Roblox game</title>
+  <defs>
+    <!-- Same palette as other Trevanix projects: background #141418, panel #1f1f25, line #33333b,
+         text #ececea, muted #9a9993, accent #ff7a5c, success #5fd38d. -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+    <radialGradient id="glow" cx="88%" cy="10%" r="60%">
+      <stop offset="0%" stop-color="#ff7a5c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ff7a5c" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#9a9993"/>
+    </marker>
+  </defs>
+  <rect width="880" height="350" rx="18" fill="#141418"/>
+  <rect width="880" height="350" rx="18" fill="url(#grid)"/>
+  <rect width="880" height="350" rx="18" fill="url(#glow)"/>
+
+  <g font-family="system-ui,-apple-system,'Segoe UI',Roboto,sans-serif">
+    <text x="40" y="62" fill="#ff7a5c" font-size="14" font-weight="700" letter-spacing="2">CLAUDE CODE PLUGIN · ANY GENRE · NO CODING NEEDED</text>
+    <text x="40" y="104" fill="#ececea" font-size="36" font-weight="800">Ultimate-Roblox-Creator</text>
+    <text x="40" y="136" fill="#9a9993" font-size="18">From your idea to your published Roblox game, one tested step at a time.</text>
+
+    <g font-size="15">
+      <rect x="40" y="178" width="140" height="112" rx="12" fill="#1f1f25" stroke="#33333b"/>
+      <text x="58" y="210" fill="#ff7a5c" font-size="22">💡</text>
+      <text x="58" y="240" fill="#ececea" font-weight="700">Your idea</text>
+      <text x="58" y="262" fill="#9a9993" font-size="13">any genre</text>
+
+      <line x1="184" y1="234" x2="208" y2="234" stroke="#9a9993" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="212" y="178" width="148" height="112" rx="12" fill="#1f1f25" stroke="#33333b"/>
+      <text x="230" y="210" fill="#ff7a5c" font-size="22">❓</text>
+      <text x="230" y="240" fill="#ececea" font-weight="700">Simple questions</text>
+      <text x="230" y="262" fill="#9a9993" font-size="13">a one-page game sheet</text>
+
+      <line x1="364" y1="234" x2="388" y2="234" stroke="#9a9993" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="392" y="178" width="148" height="112" rx="12" fill="#1f1f25" stroke="#33333b"/>
+      <text x="410" y="210" fill="#ff7a5c" font-size="22">🧪</text>
+      <text x="410" y="240" fill="#ececea" font-weight="700">Small phases</text>
+      <text x="410" y="262" fill="#9a9993" font-size="13">tests + backups</text>
+
+      <line x1="544" y1="234" x2="568" y2="234" stroke="#9a9993" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="572" y="178" width="148" height="112" rx="12" fill="#1f1f25" stroke="#33333b"/>
+      <text x="590" y="210" fill="#ff7a5c" font-size="22">🎮</text>
+      <text x="590" y="240" fill="#ececea" font-weight="700">Every device</text>
+      <text x="590" y="262" fill="#9a9993" font-size="13">PC · phone · console</text>
+
+      <line x1="724" y1="234" x2="748" y2="234" stroke="#9a9993" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="752" y="178" width="96" height="112" rx="12" fill="#1f2a22" stroke="#5fd38d"/>
+      <text x="770" y="210" fill="#5fd38d" font-size="22">🚀</text>
+      <text x="770" y="240" fill="#ececea" font-weight="700">You</text>
+      <text x="770" y="262" fill="#ececea" font-weight="700">publish</text>
+    </g>
+
+    <text x="40" y="324" fill="#9a9993" font-size="13">Server authority · safe saving · honest monetization · talks in your language</text>
+  </g>
+</svg>
